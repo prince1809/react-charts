@@ -1,23 +1,42 @@
 {
-  "name": "react-charts",
-  "version": "0.0.01",
-  "private": false,
-  "description": "Reactjs Charts using pathjs library",
-  "main": "lib/chart.js",
-  "author": "Prince Kumar ( prince18pat@gmail.com )",
-  "Liscence": "MIT",
-  "homeepage": "http://dev.princekr.com/react-charts",
-  "repository": {
-    "type": "git",
-    "url": "http://github.com/prince1809/react-charts"
-  },
-  "dependencies": {
-    "paths-js": "^0.3.4",
-    "react": "^0.13.3",
-    "reactify": "^1.1.1"
-  },
-  "devDependencies": {
-    "gulp": "^3.9.0",
-    "react-intl": "^1.2.0"
-  }
+    "name": "react-charts",
+    "version": "0.0.01",
+    "private": false,
+    "description": "Reactjs Charts using pathjs library",
+    "main": "lib/chart.js",
+    "author": "Prince Kumar ( prince18pat@gmail.com )",
+    "Liscence": "MIT",
+    "homeepage": "http://dev.princekr.com/react-charts",
+    "repository": {
+        "type": "git",
+        "url" : "http://github.com/prince1809/react-charts"
+    },
+    "dependencies": {
+        "paths-js": "^0.3.4",
+        "react": "^0.13.3",
+        "reactify": "^1.1.1",
+        "underscore": "^1.8.3",
+        "vivus": "^0.2.1"
+    },
+    "devDependencies": {
+        "gulp": "^3.8.10",
+        "react-intl": "^1.2.0",
+        "react-binding": "^0.6.4",
+        "react-component-gulp-tasks": "^0.7.0"
+    },
+    "peerDependencies": {},
+    "browserify": {
+        "transform":[
+            "reactify"
+        ]
+    },
+    "browser": "lib/Chart.js",
+    "browserify-shim":{
+        "reaact": "global:react"
+    },
+    
+    "keywords": [
+        "react",
+        "react-component"
+    ]
 }
